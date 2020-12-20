@@ -13,7 +13,7 @@ try {
      core.setFailed("Invalid characters in string");
   }
 
-  execSync('"C:\\actions-runner\\sdk\\tools\\ContentBuilder\\builder\steamcmd.exe" +login ' + username + ' ' + password + ' +run_app_build_http ' + script + ' +quit', (err, stdout, stderr) => {
+  execSync('"C:\\actions-runner\\sdk\\tools\\ContentBuilder\\builder\\steamcmd.exe" +login ' + username + ' ' + password + ' +run_app_build_http ' + script + ' +quit', (err, stdout, stderr) => {
     console.log(stdout);
     console.log(stderr);
     if (err) {
