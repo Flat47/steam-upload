@@ -17,7 +17,7 @@ try {
   var steamcmdpath = sdkroot + "/tools/ContentBuilder/builder_osx/steamcmd.sh";
   if (process.platform === "win32")
   {
-    steamcmdpath = sdkroot += "\\tools\\ContentBuilder\\builder\\steamcmd.exe"
+    steamcmdpath = sdkroot + "\\tools\\ContentBuilder\\builder\\steamcmd.exe"
   }
 
   var proc = spawn(steamcmdpath, ['+login', username, password, '+run_app_build_http', script, '+quit']);
