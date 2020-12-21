@@ -1,6 +1,10 @@
 name: 'Steam Upload'
 description: 'Upload a game to steam'
 inputs:
+  sdkroot:
+    description: 'Location of steam sdk directory'
+    required: true
+    default: ''
   script:
     description: 'Path to script'
     required: true
