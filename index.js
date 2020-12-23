@@ -14,7 +14,7 @@ try {
      core.setFailed("Invalid characters in string");
   }
   
-  var steamcmdpath = sdkroot + "/tools/ContentBuilder/builder_osx/steamcmd.sh";
+  var steamcmdpath = sdkroot + "/tools/ContentBuilder/builder_osx/steamcmd";
   if (process.platform === "win32")
   {
     steamcmdpath = sdkroot + "\\tools\\ContentBuilder\\builder\\steamcmd.exe"
